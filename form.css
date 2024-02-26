@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+*{
+    margin: 0;
+    padding :0;
+    font-family: 'Cinzel',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width:100%;
+    background-image: url("pic6.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: 5s;
+}
+
+body.active{
+    min-height: 100vh;
+    width:100%;
+    background-image: url("pic7.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo img {
+    content: center;
+    align-items: center;
+    position: relative;
+    padding:15px 10px;
+    opacity: 20;
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+    transition: 0.10s ease-in-out;
+}
+
+
+.logo:hover img {
+    transform: scale(1.2);
+   }
+
+.container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.orangebg{
+    position: absolute;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 420px;
+    background: rgba(255,255,255,.20);
+    box-shadow: 0 5px 45px rgba(0,0,0,.26);
+}
+.orangebg .box{
+    position: relative;
+    width : 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px whitesmoke;
+    
+}
+.form-box{
+    position: absolute;
+    background:  rgb(255, 251, 249);
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    transition: ease-in-out .5s;
+    overflow: hidden;
+    border: 1px salmon;
+}
+
+.form-box.active{
+    left: 50%;
+
+}
+
+.box h2{
+    color: black;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 5px;
+   
+
+}
+
+.orangebg .box button{
+    padding: 6px 15px;
+    background: transparent;
+    color: black;
+    font-size: 18px;
+    font-weight: 10px;
+    border: none;
+    cursor: pointer;
+    border: 10px black;
+    
+    
+}
+
+.form-box .form{
+    position: absolute;
+    width: 80%;
+    transition: 3s;
+    padding : 50px;
+}
+.form-box .signinform{
+  transform: translateX(-420px);
+}
+.form-box.active .signinform{
+    transform: translateX(0px);
+
+}
+.form-box.signupform{
+    transform: translateX(0px);
+}
+.form-box.active .signupform{
+   
+    transform: translateX(420px);
+    
+}
+
+
+.form-box .form form{ 
+   display : flex;
+   width: 100%;
+   flex-direction: column;
+
+}
+
+
+.form form input{ 
+    background: rgb(255, 251, 251);
+   margin-bottom: 20px;
+   padding: 10px;
+   outline: none;
+   border: 1px solid black;
+    
+ }
+
+ .form form h3{ 
+   text-align: center;
+   font-size: 2em;
+   font-weight: 500;
+   margin-bottom: 20px;
+  color:  black;
+
+  }
+  .form form input[type = "submit"] { 
+    background: rgb(255, 245, 240);
+    border: none;
+    max-width: 100px;
+    color: black;
+    cursor: pointer;
+     border: 1px solid black;
+}
+.form form input[value= "Register"] { 
+    background-color: rgb(255, 245, 240);
+    border: none;
+    max-width: 100px;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+
+   
+}
+
+
+a{
+    color:black ;
+    font-size: 14px;
+}
+
+
